@@ -1,0 +1,43 @@
+// Font families
+
+$standard-font: 'Montserrat', Helvetica, Arial, sans-serif;
+$heading-font: 'Oswald', Helvetica, Arial, sans-serif;
+
+// Repeated colours
+$feature-color: #eec755;
+$primary-color: #001c54;
+$secondary-color: #002373;
+$text-color: #ffffff;
+$white: #fff;
+$black: #000;
+$grey: #a6bcc4;
+
+$competition-text-color: $text-color;
+$form-text-color: $competition-text-color;
+$form-radio-button-select-bg: $black;
+$form-radio-button-border: #c3a227;
+$form-checkbox-border: $text-color;
+$form-checkbox-select-bg: #c3a227;
+$form-label-color: $competition-text-color;
+$form-optin-label-color: $competition-text-color;
+$error-text-color: $white;
+$error-bg-color: $feature-color;
+
+// Screen widths
+$max-wrapper: 900px;
+
+$max-screen-width: 980px;
+$large-screen-width: 920px;
+
+$medium-screen-width: 740px;
+$small-screen-width: 600px;
+$tiny-screen-width: 400px;
+
+$text-box-max-width: 500px;
+
+
+
+// Urls
+$sprite-url: url(../img/sprite-new.png);
+$sprite-width: 1280px;
+$sprite-height: 916px;

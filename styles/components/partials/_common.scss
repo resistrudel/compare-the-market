@@ -1,0 +1,121 @@
+/* Common classes/helpers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+
+  width: 100%;
+  min-height: 100vh;
+  background: $white;
+  font-family: $standard-font;
+  font-size: 10px;
+  color: $text-color;
+  margin: 0 auto;
+  text-align: center;
+  > iframe {
+    display: none;
+  }
+  &:before {
+    transition: all 1s ease-in-out;
+    @include empty-block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../img/BG4.jpg") center center/ cover no-repeat !important;
+    @media (max-width: 1000px) {
+      position: fixed;
+    }
+  }
+  &.fp-viewing-intro:before {
+    background: url("../img/BG1.jpg") center center/ cover no-repeat !important;
+  }
+  &.fp-viewing-movies:before {
+    background: url("../img/BG2.jpg") center center/ cover no-repeat !important;
+  }
+  &.fp-viewing-quiz:before {
+    background: url("../img/BG3.jpg") center center/ cover no-repeat !important;
+  }
+}
+.wrapper {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  padding: 3em 2em;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+.text-box {
+  max-width: 810px;
+  margin: auto;
+}
+
+#frame {
+  width: 100%;
+  min-width: 1000px;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media(max-width: 1020px) {
+  #frame {
+    min-width: 100%;
+  }
+}
+
+.no-media {
+  .wrapper {
+    max-width: 980px;
+  }
+  #frame {
+    min-width: 1000px;
+  }
+}
+
+.ie8 {
+  .wrapper {
+    max-width: 980px;
+  }
+  #frame {
+    min-width: 1000px;
+  }
+}
+
+.clearfix:after {
+  clear: both;
+  height: 0;
+  content: ' ';
+  font-size: 0;
+  display: block;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+strong {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
